@@ -111,8 +111,8 @@ func route(w http.ResponseWriter, r *http.Request) {
 
 func main() {
 	http.HandleFunc("/", route)
-	fmt.Println("Starting server on port 80...")
-	err := http.ListenAndServe(":80", nil)
+	fmt.Println("Starting server on port 8080...")
+	err := http.ListenAndServe(":8080", nil)
 	if err != nil {
 		fmt.Println("Error starting server:", err)
 	}
